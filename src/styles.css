@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+
+.not-found-message {
+  color: red;
+  font-size: 24px;
+  text-align: center;
+}
+
+.header {
+  color: #0f0d0a;
+  width: 100%;
+  padding: 30px;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url(./imagenes/fondo\ de\ hea.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.header h1 {
+  margin: 30px;
+  font-size: 48px;
+}
+
+.header h2 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.select-menu {
+  padding: 10px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(204, 190, 164);
+}
+
+.hotel-card {
+  padding: 20px;
+  width: 350px;
+  margin: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 2px 15px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 2px 15px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 2px 15px 0px rgba(50, 50, 50, 0.75);
+}
+
+.hotel-card img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+  height: 350px;
+  width: 100%;
+}
+
+.container h2 {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.container-2 {
+  box-shadow: 0px 2px 1px 0px rgba(50, 50, 50, 0.75);
+  border-radius: 5px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  width: 100%;
+}
+
+.date {
+  background-color: rgb(201, 153, 64);
+  box-shadow: 0px 1px 3px 0px rgb(201, 153, 64);
+  border-radius: 5px;
+  color: white;
+  padding-left: 5px;
+}
+
+.container p {
+  overflow: auto;
+  height: 60px;
+  margin: 10px 0;
+}
+
+.scroll-bar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb {
+  background-color: rgb(201, 153, 64);
+  border-radius: 2px;
+}
+
+.box {
+  display: flex;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.text-box {
+  padding-left: 10px;
+}
+
+.icon-box {
+  height: 100%;
+  width: 36px;
+  background-color: rgb(201, 153, 64);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.icon {
+  color: white;
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+}
+
+.rooms {
+  margin-right: 10px;
+}
+
+.price {
+  width: 35%;
+  margin-left: 5%;
+  padding: 0 4%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(11, 109, 48, 0.85);
+  border: 1px rgba(11, 109, 48, 0.85);
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+button {
+  border-radius: 3px;
+  width: 100px;
+  padding: 5px;
+  margin: 0 1px;
+  cursor: pointer;
+  border-style: none;
+  background-color: rgb(238, 0, 0);
+  color: white;
+  box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 1);
+}
+input {
+  border-radius: 3px;
+  padding: 5px;
+  margin: 0 1px;
+  width: 140px;
+  cursor: pointer;
+  border-style: none;
+  box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 1);
+}
+
+select {
+  border-radius: 3px;
+  padding: 5px;
+  margin: 0 1px;
+  width: 140px;
+  cursor: pointer;
+  border-style: none;
+  box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 1);
+}
+
+@media screen and (max-width: 768px) {
+  input::-webkit-calendar-picker-indicator {
+    padding: 15px 0 15px 224px;
+    margin-left: -15px;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .select-menu {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(204, 190, 164);
+    background: linear-gradient(
+      180deg,
+      rgba(204, 190, 164, 1) 40%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+
+  /* the next className belongs to BookingDates, Button and Select components */
+  .mobile-size {
+    width: 250px;
+    padding: 15px;
+    font-size: 20px;
+  }
+}
