@@ -34,7 +34,7 @@
       rgba(255, 255, 255, 0.6),
       rgba(255, 255, 255, 0.6)
     ),
-    url(./imagenes/fondo\ de\ hea.png);
+    url(./imagenes/fondo-header.png);
   background-size: cover;
   background-position: center;
 }
